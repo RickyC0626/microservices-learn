@@ -1,5 +1,7 @@
+import { Request, Response } from "express";
+
 export const expressCallback = (controller: (request: any) => Promise<object>) => {
-  return (req: any, res: any) => {
+  return (req: Request, res: Response) => {
     const request = {
       body: req.body,
       query: req.query,

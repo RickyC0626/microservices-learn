@@ -1,4 +1,4 @@
-import getDifference from "./get-difference";
+import { getDifference } from "./get-difference";
 
 describe("get difference", () => {
   it("should successfully calculate difference of nums", async () => {

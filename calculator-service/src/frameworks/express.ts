@@ -1,4 +1,4 @@
-const expressCallback = (controller: (request: any) => Promise<object>) => {
+export const expressCallback = (controller: (request: any) => Promise<object>) => {
   return (req: any, res: any) => {
     const request = {
       body: req.body,
@@ -21,5 +21,3 @@ const expressCallback = (controller: (request: any) => Promise<object>) => {
       .catch((err: any) => res.status(err.statusCode).send({ error: err }));
   };
 };
-
-export default expressCallback;

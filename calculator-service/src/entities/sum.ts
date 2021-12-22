@@ -1,4 +1,4 @@
-const sum = (...nums: number[]): number => {
+export const sum = (...nums: number[]): number => {
   return nums.reduce((acc: number, curr: number): number => {
     // NaN !== NaN -> true
     if(curr !== curr)
@@ -10,5 +10,3 @@ const sum = (...nums: number[]): number => {
     return acc + curr;
   }, 0);
 };
-
-export default sum;

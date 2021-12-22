@@ -1,3 +1,3 @@
-import getDifference from "./get-difference";
+import { getDifference } from "./get-difference";
 
 export { getDifference };

@@ -1,3 +1,3 @@
-import expressCallback from "./express";
+import { expressCallback } from "./express";
 
 export { expressCallback };

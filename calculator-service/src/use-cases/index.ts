@@ -1,3 +1,3 @@
-import subtract from "./subtract";
+import { subtract } from "./subtract";
 
 export { subtract };

@@ -1,6 +1,6 @@
 import { subtract } from "../../use-cases";
 
-const getDifference = (request: any): Promise<object> => {
+export const getDifference = (request: any): Promise<object> => {
   try {
     const { nums } = request.body;
     const diff = subtract(...nums);
@@ -26,5 +26,3 @@ const getDifference = (request: any): Promise<object> => {
     });
   }
 };
-
-export default getDifference;

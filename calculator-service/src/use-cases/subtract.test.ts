@@ -1,4 +1,4 @@
-import subtract from "./subtract";
+import { subtract } from "./subtract";
 
 describe("subtract", () => {
   it("should return 0 if two parameters are equal", () => {

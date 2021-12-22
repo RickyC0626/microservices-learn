@@ -1,7 +1,7 @@
 import express from 'express';
 import bodyParser from 'body-parser';
 
-import { getDifference } from './interfaces/controllers';
+import { getSum, getDifference } from './interfaces/controllers';
 import { expressCallback } from './frameworks';
 
 require('dotenv').config();
@@ -16,6 +16,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // application/x-www-form-ur
 app.get(apiRoot, (req, res) => {
   res.send('API root for calculator service');
 });
+app.get(`${apiRoot}/add`, expressCallback(getSum));
 app.get(`${apiRoot}/sub`, expressCallback(getDifference));
 
 app.listen(port, () => {

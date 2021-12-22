@@ -1,3 +1,4 @@
+import { getSum } from "./get-sum";
 import { getDifference } from "./get-difference";
 
-export { getDifference };
+export { getSum, getDifference };

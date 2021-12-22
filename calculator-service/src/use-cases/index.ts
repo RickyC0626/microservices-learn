@@ -1,3 +1,4 @@
+import { add } from "./add";
 import { subtract } from "./subtract";
 
-export { subtract };
+export { add, subtract };
